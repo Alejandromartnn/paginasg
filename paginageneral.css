@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+ body {
+    height: 100%;
+}
+
+/* html */
+html {
+    background-image: url(../images/fondo2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* body */
+body {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* header */
+header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.logo {
+    height: 100px;
+    width: 200px;
+}
+
+/* nav */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.boton-menu {
+    display: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: red;
+}
+
+/* main */
+main {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.principal {
+    color: white;
+    font-weight: bold;
+}
+
+/* fotos */
+.fotos {
+    margin-top: 40px;
+}
+
+.fotos2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    height: 350px;
+}
+
+.fotos2 a {
+    text-decoration: none;
+}
+
+.fotos3 {
+    border-radius: 10px;
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.fotos3:hover {
+    transform: scale(1.03);
+}
+
+.fotos3 h3 {
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+}
+
+.foto4 {
+    height: 260px;
+    width: 100%;
+    object-fit: cover;
+}
+.imagen4{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+}
+.imagen4 img:hover{
+    transform: scale(1.05) rotate(1deg) ;
+    
+}
+.imagen4 img{
+   width: 500px;
+   height: 300px;
+   margin-left: 200px;
+    
+}
+
+
+/* footer */
+footer {
+    background-color: dimgrey;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    width: 100%;
+    color: white;
+    margin-top: auto; 
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.redes a {
+    color: white;
+   
+}
+
+.redes i:hover {
+    color: red;
+     transition: 0.5s;
+}
+
+/* media tablet */
+@media (max-width: 768px) {
+     html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+      main {
+        flex: 1;
+        padding: 30px 20px;
+    }
+    .menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        display: none;
+
+    }
+
+    nav.activo ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fotos {
+        display: flex;
+        flex-direction: column;
+
+    }
+     footer {
+       background-color: dimgrey;
+        padding: 10px;
+        color: white;
+        text-align: center;
+        font-size: 14px;
+        display: inline-block;
+        align-items: center;
+        margin-top: 700px;
+    }
+    .imagen4{
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* media movil */
+@media screen and (max-width: 576px) {
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .imagen4{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        
+        margin-right: 100px;
+        
+    }
+     .imagen4 img{
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        height: 350px;
+        justify-items: center;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main {
+        flex: 1;
+        padding: 30px 20px;
+    }
+
+    .boton-menu {
+        display: inline-block;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .boton-menu button {
+        background-color: aquamarine;
+        width: 100px;
+        height: 50px;
+        font-size: 1rem;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+
+    .menu li {
+        width: 100%;
+    }
+
+    .fotos2 {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: center;
+        height: 150px;
+        flex: 1;
+    }
+
+    footer {
+        background-color: dimgrey;
+        padding: 10px;
+        color: white;
+        text-align: center;
+        font-size: 14px;
+        display: inline-block;
+        align-items: center;
+        margin-top: 1550px;
+    }
+}

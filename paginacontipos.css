@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: lightgray;
+    color: black;
+}
+
+/* header */
+header {
+    background-color: teal;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+/* nav */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: row;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+   color: blue;
+}
+
+
+/* main */
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+h2 {
+    color: green;
+    margin-bottom: 15px;
+    border-bottom: 2px solid green;
+}
+
+
+.tipo2 {
+    display: grid;
+    grid-template-areas:
+        "texto imagen";
+    grid-template-columns: 1fr 1fr;
+    gap: 200px;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+.texto {
+    grid-area: texto;
+}
+
+.imagen {
+    grid-area: imagen;
+}
+.fotomain{
+      border: 2px solid blue;
+}
+ .fotomain:hover{
+transform: scale(1.1) rotate(1deg) ;
+border: 5px solid green;
+ } 
+
+.tipo2 .imagen img {
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+#ventajas {
+    height: 700px;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: navy;
+    color: white;
+    margin-top: 30px;
+}
+
+footer a {
+    color: aquamarine;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.redes a {
+    color: white;
+}
+
+.redes i:hover {
+    color: red;
+    transition: 0.5s;
+}
+
+/* mediamovil */
+@media (max-width: 576px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+    }
+}

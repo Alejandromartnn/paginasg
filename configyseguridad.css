@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-image: url(../images/fondo2.jpg);
+  color: black;
+  margin: 0;
+   padding: 20px 20px 0 20px;
+  line-height: 1.6;
+}
+
+/* Contenedor body */
+.content {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+  background-image:url(../images/fondoclaro.jpg) ;
+  padding: 30px 30px;
+  border-radius: 12px;
+  
+}
+
+/*header*/
+h1 {
+  color: darkslateblue;
+  font-weight: 700;
+  font-size: 2.8rem;
+  margin-bottom: 30px;
+  text-align: center;
+  background-color: lightsteelblue;
+  padding: 15px;
+  border-radius: 8px;
+  border-bottom: 4px solid slateblue;
+}
+
+h1:hover {
+  background-color: lightblue;
+  color: crimson;
+  transition: 0.5s;
+}
+/*nav*/
+nav {
+  background-color: lightsteelblue;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 30px 0;
+  box-shadow: 0 3px 6px lightgray;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: darkslateblue;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 10px 18px;
+  border-radius: 30px;
+  transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: slateblue;
+  color: white;
+}
+
+/* h2 */
+h2 {
+  color: slateblue;
+  font-weight: 600;
+  font-size: 1.9rem;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  border-bottom: 3px solid slateblue;
+  padding-bottom: 6px;
+}
+
+h2:hover {
+  color: crimson;
+  transition: 0.4s;
+}
+
+/* Párrafos */
+p {
+  font-size: 1.1rem;
+  margin-bottom: 18px;
+}
+
+/* Listas */
+ul {
+  list-style-type: square;
+  padding-left: 24px;
+  margin-bottom: 25px;
+}
+
+ul li {
+  margin-bottom: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Imagenes */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 25px 0;
+  border: 3px solid slateblue;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px lightgray;
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.03)  ;
+}
+
+/* Videos */
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 25px 0;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px lightgray;
+}
+/* Texto */
+.texto {
+    max-width: 55%;
+}
+/* footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: navy;
+    color: white;
+    margin-top: 30px;
+}
+
+footer a {
+    color: aquamarine;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.redes a {
+    color: white;
+}
+
+.redes i:hover {
+    color: red;
+    transition: 0.5s;
+}
